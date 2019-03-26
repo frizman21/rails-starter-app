@@ -39,41 +39,19 @@ stuff into a view
 # Redux
 * We then used [this example](https://github.com/suusan2go/react-rails-redux-sample) to create our first Redux powered React module, except that we deployed it into the app/javascript folder instead of app/assets/javascript. This conforms to default react-rails convention.
 
-Grab some ne
+ 1) Grab some necessary packages.
 ```
 yarn add react-redux
 yarn add redux
 ```
 
-    "react-redux": "^6.0.1",
-        "redux": "^4.0.1",
+2) Suck in a basic counter app built for React/Redux
 
 # Redux and React Hooks
--pick up here!
+-[pick up here](https://reactjs.org/docs/hooks-custom.html#useyourimagination) with useReducer to support the funtionality.
 
 
+# Dockerize
 
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Deploy to Heroku
