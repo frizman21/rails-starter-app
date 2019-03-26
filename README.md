@@ -1,24 +1,57 @@
-# README
+# Install Rails
+```
+rails new app-name
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Basic React Install
+Install react-rails gme and wire-up via webpacker and Rails pipeline.
+Start by [tying Rails and React together](https://github.com/reactjs/react-rails)
+```
+gem 'webpacker'
+gem 'react-rails'
+```
 
-Things you may want to cover:
+then
 
-* Ruby version
+```
+$ bundle install
+$ rails webpacker:install       
+$ rails webpacker:install:react 
+$ rails generate react:install
+```
 
-* System dependencies
+then 
 
-* Configuration
+```
+<%= javascript_pack_tag 'application' %>
+```
 
-* Database creation
+then 
+```
+$ rails g react:component HelloWorld greeting:string
+```
 
-* Database initialization
+stuff into a view
+```
+<%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
+```
 
-* How to run the test suite
+# Redux
+* We then used [this example](https://github.com/suusan2go/react-rails-redux-sample) to create our first Redux powered React module, except that we deployed it into the app/javascript folder instead of app/assets/javascript. This conforms to default react-rails convention.
 
-* Services (job queues, cache servers, search engines, etc.)
+ 1) Grab some necessary packages.
+```
+yarn add react-redux
+yarn add redux
+```
 
-* Deployment instructions
+2) Suck in a basic counter app built for React/Redux
 
-* ...
+# Redux and React Hooks
+-[pick up here](https://reactjs.org/docs/hooks-custom.html#useyourimagination) with useReducer to support the funtionality.
+
+
+# Dockerize
+
+
+# Deploy to Heroku
