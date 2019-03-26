@@ -1,11 +1,8 @@
 import { combineReducers } from 'redux';
-let reducer = (state = {}, action) => {
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
+import counter from './counter';
+
 const rootReducer = combineReducers({
-  reducer
+  counter
 });
+
 export default rootReducer;
